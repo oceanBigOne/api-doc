@@ -76,6 +76,15 @@ HTTP/1.1 400 Bad Request
 }
 ```
 
+```
+HTTP/1.1 405 Method Not Allowed
+{
+       "status": 405,
+       "title": "Method Not Allowed",
+       "detail": "Please try with POST"
+}
+```
+
 
 
 ## Closing an election
@@ -110,6 +119,14 @@ HTTP/1.1 403 Forbidden
 	"status": 403,
 	"title": "You are not allowed."
 	"detail": "Please check your authentification credits."
+}
+```
+```
+HTTP/1.1 405 Method Not Allowed
+{
+       "status": 405,
+       "title": "Method Not Allowed",
+       "detail": "Please try with POST"
 }
 ```
 
@@ -161,6 +178,15 @@ HTTP/1.1 403 Forbidden
 }
 ```
 
+```
+HTTP/1.1 405 Method Not Allowed
+{
+       "status": 405,
+       "title": "Method Not Allowed",
+       "detail": "Please try with GET"
+}
+```
+
 
 
 ## View candidate 
@@ -206,6 +232,14 @@ HTTP/1.1 403 Forbidden
 }
 ```
 
+```
+HTTP/1.1 405 Method Not Allowed
+{
+       "status": 405,
+       "title": "Method Not Allowed",
+       "detail": "Please try with GET"
+}
+```
 
 
 ## View election
@@ -258,7 +292,14 @@ HTTP/1.1 403 Forbidden
         "detail": "Please check your authentification credits."
 }
 ```
-
+```
+HTTP/1.1 405 Method Not Allowed
+{
+       "status": 405,
+       "title": "Method Not Allowed",
+       "detail": "Please try with GET"
+}
+```
 
 
 # Accounts

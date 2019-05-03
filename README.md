@@ -5,7 +5,7 @@ API documentation for developper (work in progress)
 
 # Authentication
 
-Authentication and authorization is done with Cookies. 
+Authentication and authorization is done with Cookies.
 
 # Management on elections
 
@@ -40,7 +40,7 @@ HTTP/1.1 200 OK
 ```
 
 ### Error Response:
-``` 
+```
 HTTP/1.1 400 Bad Request
 {
 	"status": 400,
@@ -49,7 +49,7 @@ HTTP/1.1 400 Bad Request
 }
 ```
 
-``` 
+```
 HTTP/1.1 400 Bad Request
 {
        "status": 400,
@@ -58,7 +58,7 @@ HTTP/1.1 400 Bad Request
 }
 ```
 
-``` 
+```
 HTTP/1.1 400 Bad Request
 {
        "status": 400,
@@ -68,7 +68,7 @@ HTTP/1.1 400 Bad Request
 ```
 
 ```
-HTTP/1.1 400 Bad Request 
+HTTP/1.1 400 Bad Request
 {
        "status": 400,
        "title": "Voters' list is not valid",
@@ -85,14 +85,6 @@ HTTP/1.1 405 Method Not Allowed
 }
 ```
 
-```
-HTTP/1.1 422 Missing parameter(s) 
-{
-    "status": 422,
-    "title": "Missing parameter(s)",
-    "detail": "Parameter isPermissive not found, Parameter ownerMail not found, Parameter voters not found, Parameter dateStart not found, Parameter dateEnd not found, Parameter jauges not found, Parameter record not found"
-}
-```
 
 
 ## Closing an election
@@ -139,7 +131,7 @@ HTTP/1.1 405 Method Not Allowed
 ```
 
 
-# Views 
+# Views
 
 ## View results
 
@@ -156,9 +148,9 @@ HTTP/1.1 200 OK
 {
         "data":{
                 "type":"results",
-                "attributes":{ 
+                "attributes":{
 			"candidateId1": {
-				"jauge1": "0.26", 
+				"jauge1": "0.26",
 				"jauge2": "0.15"
                         }
                 }
@@ -197,7 +189,7 @@ HTTP/1.1 405 Method Not Allowed
 
 
 
-## View candidate 
+## View candidate
 
 `GET /candidate/`
 
@@ -313,6 +305,6 @@ HTTP/1.1 405 Method Not Allowed
 # Accounts
 
 For now, accounts are managed only through tokens and emails. Accounts are deleted as soon as the associated election is closed.
-Accounts are thus created with the mail owner attribute. 
+Accounts are thus created with the mail owner attribute.
 
 No further requests seem needed.

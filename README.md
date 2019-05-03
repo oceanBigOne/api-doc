@@ -85,6 +85,14 @@ HTTP/1.1 405 Method Not Allowed
 }
 ```
 
+```
+HTTP/1.1 422 Missing parameter(s)
+{
+    "status": 422,
+    "title": "Missing parameter(s)",
+    "detail": "Parameter isPermissive not found, Parameter ownerMail not found, Parameter voters not found, Parameter dateStart not found, Parameter dateEnd not found, Parameter jauges not found, Parameter record not found"
+}
+```
 
 
 ## Closing an election
